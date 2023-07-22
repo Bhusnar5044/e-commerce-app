@@ -1,6 +1,6 @@
 import MainNav from '@/components/MainNav';
 import NavbarActions from '@/components/NavbarActions';
-import Container from '@/components/ui/container';
+import Container from '@/components/ui/Container';
 import Link from 'next/link';
 
 const categories = [

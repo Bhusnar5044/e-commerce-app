@@ -1,5 +1,5 @@
-import NoResults from '@/components/ui/no-results';
-import ProductCard from '@/components/ui/product-card';
+import NoResults from '@/components/ui/NoResults';
+import ProductCard from '@/components/ui/ProductCard';
 import { memo } from 'react';
 import { IProps } from './types';
 

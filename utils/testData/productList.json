@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "category": { "id": "1", "name": "Glasses" },
+        "price": "12",
+        "isFeatured": true,
+        "name": "Dummy",
+        "size": { "id": "1", "name": "S", "value": "12" },
+        "color": { "id": "1", "name": "Gray", "value": "gray" },
+        "images": [{ "id": "1", "url": "" }]
+    }
+]

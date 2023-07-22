@@ -2,18 +2,18 @@
 
 import { ShoppingCart } from 'lucide-react';
 
-import Button from '@/components/ui/button';
-import Currency from '@/components/ui/currency';
+import Button from '@/components/ui/Button';
+import Currency from '@/components/ui/Currency';
+import { addItem } from '@/redux/features/cartSlice';
+import { useAppDispatch } from '@/redux/store';
 import { memo } from 'react';
 import { IProps } from './types';
-// import useCart from "@/hooks/use-cart";
 
 export const Info: React.FC<IProps> = memo(({ data }) => {
-    // const cart = useCart();
+    const dispatch = useAppDispatch();
 
     const onAddToCart = () => {
-        // cart.addItem(data);
-        console.log(data);
+        dispatch(addItem(data));
     };
 
     return (

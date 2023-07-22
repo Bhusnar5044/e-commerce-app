@@ -2,9 +2,9 @@
 
 import { memo } from 'react';
 
+import Gallery from '@/components/Gallery';
 import Info from '@/components/Info';
-import Gallery from '@/components/gallery';
-import Modal from '@/components/ui/modal';
+import Modal from '@/components/ui/Modal';
 import { onClose } from '@/redux/features/modalSlice';
 import { useAppDispatch, useAppSelector } from '@/redux/store';
 
