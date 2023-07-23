@@ -8,7 +8,7 @@ import { IProps } from './types';
 export const ProductList: React.FC<IProps> = memo(({ title, items }) => {
     return (
         <div className="space-y-4">
-            <div className="flex justify-between items-center sticky top-[4rem] z-30 bg-white">
+            <div className="flex flex-wrap justify-between items-center sticky top-[4rem] z-30 bg-white">
                 <h3 className="font-bold text-3xl">{title}</h3>
                 <div className="flex gap-2 items-center">
                     <SearchBox />
