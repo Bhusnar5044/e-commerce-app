@@ -3,7 +3,7 @@
 exports[`MainNav should render properly 1`] = `
 <div>
   <div
-    class="mx-auto max-w-7xl"
+    class="mx-auto max-w-screen-2xl"
   >
     <nav
       class="mx-6 flex flex-wrap items-center justify-around"

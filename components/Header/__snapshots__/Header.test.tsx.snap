@@ -6,7 +6,7 @@ exports[`Header should render properly 1`] = `
     class="bg-blue-200 w-full h-18 bg-amazon_blue text-lightText fixed top-0 z-50"
   >
     <div
-      class="mx-auto max-w-7xl"
+      class="mx-auto max-w-screen-2xl"
     >
       <div
         class="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center"

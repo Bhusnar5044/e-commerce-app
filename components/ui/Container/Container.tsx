@@ -5,7 +5,7 @@ interface ContainerProps {
 }
 
 export const Container: React.FC<ContainerProps> = memo(({ children }) => {
-    return <div className="mx-auto max-w-7xl">{children}</div>;
+    return <div className="mx-auto max-w-screen-2xl">{children}</div>;
 });
 
 Container.displayName = 'Container';
