@@ -1,12 +1,20 @@
 export interface Product {
-    id: string;
-    category: Category;
-    name: string;
-    price: string;
-    isFeatured: boolean;
-    size: Size;
-    color: Color;
-    images: Image[];
+    id: number;
+    title: string;
+    category: string;
+    price: number;
+    rating: number;
+    brand: string;
+    description: string;
+    thumbnail: string;
+    images: string[];
+}
+
+export interface ProductsResponse {
+    products: Product[];
+    total: number;
+    skip: number;
+    limit: number;
 }
 
 export interface Image {
@@ -15,7 +23,6 @@ export interface Image {
 }
 
 export interface Billboard {
-    id: string;
     label: string;
     imageUrl: string;
 }
