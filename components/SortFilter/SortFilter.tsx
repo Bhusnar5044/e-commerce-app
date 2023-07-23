@@ -1,9 +1,12 @@
 'use client';
 
 import { Menu, Transition } from '@headlessui/react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FC, memo } from 'react';
 
 export const SortFilter: FC = memo(() => {
+    const pathname = usePathname();
     return (
         <div className="flex items-center justify-center py-2">
             <div className="relative inline-block text-left">
@@ -33,44 +36,44 @@ export const SortFilter: FC = memo(() => {
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-                                {/* <div className="> */}
-                                <Menu.Item>
-                                    {({ active }) => (
-                                        <a
-                                            href="#account-settings"
-                                            className={`${
-                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
-                                            } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
-                                        >
-                                            Best Rating
-                                        </a>
-                                    )}
-                                </Menu.Item>
-                                <Menu.Item>
-                                    {({ active }) => (
-                                        <a
-                                            href="#support"
-                                            className={`${
-                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
-                                            } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
-                                        >
-                                            Price: Low to High
-                                        </a>
-                                    )}
-                                </Menu.Item>
-                                <Menu.Item>
-                                    {({ active }) => (
-                                        <a
-                                            href="#support"
-                                            className={`${
-                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
-                                            } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
-                                        >
-                                            Price: High to Low
-                                        </a>
-                                    )}
-                                </Menu.Item>
-                                {/* </div> */}
+                                <Link
+                                    href={`${pathname}?sort=best-rating`}
+                                    className={`${
+                                        pathname === `${pathname}?sort=best-rating`
+                                            ? 'bg-gray-100 text-gray-900'
+                                            : 'text-gray-700'
+                                    } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                                >
+                                    Best Rating
+                                </Link>
+
+                                <Link
+                                    href={{
+                                        pathname,
+                                        query: { sort: 'price-lth' },
+                                    }}
+                                    className={`${
+                                        pathname === `${pathname}?sort=price-lth`
+                                            ? 'bg-gray-100 text-gray-900'
+                                            : 'text-gray-700'
+                                    } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                                >
+                                    Price: Low to High
+                                </Link>
+
+                                <Link
+                                    href={{
+                                        pathname,
+                                        query: { sort: 'price-htl' },
+                                    }}
+                                    className={`${
+                                        pathname === `${pathname}?sort=price-htl`
+                                            ? 'bg-gray-100 text-gray-900'
+                                            : 'text-gray-700'
+                                    } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                                >
+                                    Price: High to Low
+                                </Link>
                             </Transition>
                         </>
                     )}
