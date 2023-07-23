@@ -4,8 +4,8 @@ import { ShoppingCart } from 'lucide-react';
 
 import Button from '@/components/ui/Button';
 import Currency from '@/components/ui/Currency';
+import { useAppDispatch } from '@/redux';
 import { addItem } from '@/redux/features/cartSlice';
-import { useAppDispatch } from '@/redux/store';
 import { memo } from 'react';
 import { IProps } from './types';
 

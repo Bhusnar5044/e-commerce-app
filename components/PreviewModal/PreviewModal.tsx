@@ -5,8 +5,8 @@ import { memo } from 'react';
 import Gallery from '@/components/Gallery';
 import Info from '@/components/Info';
 import Modal from '@/components/ui/Modal';
+import { useAppDispatch, useAppSelector } from '@/redux';
 import { onClose } from '@/redux/features/modalSlice';
-import { useAppDispatch, useAppSelector } from '@/redux/store';
 
 export const PreviewModal = memo(() => {
     const { isOpen, data } = useAppSelector((state) => state.modal);

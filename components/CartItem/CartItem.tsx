@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 import Currency from '@/components/ui/Currency';
 import IconButton from '@/components/ui/IconButton';
+import { useAppDispatch } from '@/redux';
 import { removeItem } from '@/redux/features/cartSlice';
-import { useAppDispatch } from '@/redux/store';
 import { Product } from '@/types';
 import { FC, memo } from 'react';
 

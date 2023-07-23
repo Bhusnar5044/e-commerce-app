@@ -7,8 +7,8 @@ import { toast } from 'react-hot-toast';
 
 import Button from '@/components/ui/Button';
 import Currency from '@/components/ui/Currency';
+import { useAppDispatch, useAppSelector } from '@/redux';
 import { removeAll } from '@/redux/features/cartSlice';
-import { useAppDispatch, useAppSelector } from '@/redux/store';
 
 export const CartSummary: FC = memo(() => {
     const searchParams = useSearchParams();

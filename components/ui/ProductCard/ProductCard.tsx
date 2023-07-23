@@ -7,9 +7,9 @@ import { MouseEventHandler, memo } from 'react';
 
 import Currency from '@/components/ui/Currency';
 import IconButton from '@/components/ui/IconButton';
+import { useAppDispatch } from '@/redux';
 import { addItem } from '@/redux/features/cartSlice';
 import { onOpen } from '@/redux/features/modalSlice';
-import { useAppDispatch } from '@/redux/store';
 import { Product } from '@/types';
 
 interface IProductCard {

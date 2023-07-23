@@ -6,7 +6,7 @@ import Container from '@/components/ui/Container';
 
 import CartItem from '@/components/CartItem';
 import CartSummary from '@/components/CartSummary';
-import { useAppSelector } from '@/redux/store';
+import { useAppSelector } from '@/redux';
 
 export const revalidate = 0;
 
