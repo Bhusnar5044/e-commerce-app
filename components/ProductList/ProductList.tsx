@@ -1,15 +1,19 @@
 import NoResults from '@/components/ui/NoResults';
 import ProductCard from '@/components/ui/ProductCard';
 import { memo } from 'react';
+import SearchBox from '../SearchBox';
 import SortFilter from '../SortFilter';
 import { IProps } from './types';
 
 export const ProductList: React.FC<IProps> = memo(({ title, items }) => {
     return (
         <div className="space-y-4">
-            <div className="flex justify-between align-center">
+            <div className="flex justify-between items-center">
                 <h3 className="font-bold text-3xl">{title}</h3>
-                <SortFilter />
+                <div className="flex gap-2 items-center">
+                    <SearchBox />
+                    <SortFilter />
+                </div>
             </div>
             {items.length === 0 && <NoResults />}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
