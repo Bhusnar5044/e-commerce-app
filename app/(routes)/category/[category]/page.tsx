@@ -8,7 +8,7 @@ import { CategoryPageProps } from './types';
 
 export const revalidate = 0;
 
-const CategoryPage: React.FC<CategoryPageProps> = async ({ params, searchParams }) => {
+const CategoryPage: React.FC<CategoryPageProps> = async ({ params }) => {
     const { products } = await getProducts({
         category: params.category,
     });
