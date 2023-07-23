@@ -10,7 +10,7 @@ import IconButton from '@/components/ui/IconButton';
 import { useAppDispatch } from '@/redux';
 import { addItem } from '@/redux/features/cartSlice';
 import { onOpen } from '@/redux/features/modalSlice';
-import { Product } from '@/types';
+import { Product } from '@utils/types';
 
 interface IProductCard {
     data: Product;

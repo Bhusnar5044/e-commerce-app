@@ -1,4 +1,4 @@
-import { Category } from '@/types';
+import { Category } from '@utils/types';
 
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/categories`;
 

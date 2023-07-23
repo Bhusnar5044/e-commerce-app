@@ -1,5 +1,5 @@
-import { Product } from '@/types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Product } from '@utils/types';
 import { IModalState } from './type';
 
 export const initialState: IModalState = {

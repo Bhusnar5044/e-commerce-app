@@ -1,5 +1,5 @@
-import { Product } from '@/types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Product } from '@utils/types';
 import { toast } from 'react-hot-toast';
 import { ICartState } from './type';
 

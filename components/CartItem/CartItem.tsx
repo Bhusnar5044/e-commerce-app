@@ -5,7 +5,7 @@ import Currency from '@/components/ui/Currency';
 import IconButton from '@/components/ui/IconButton';
 import { useAppDispatch } from '@/redux';
 import { removeItem } from '@/redux/features/cartSlice';
-import { Product } from '@/types';
+import { Product } from '@utils/types';
 import { FC, memo } from 'react';
 
 interface CartItemProps {

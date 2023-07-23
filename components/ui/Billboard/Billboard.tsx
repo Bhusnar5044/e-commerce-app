@@ -1,4 +1,4 @@
-import { Billboard as IBillboard } from '@/types';
+import { Billboard as IBillboard } from '@utils/types';
 import { memo } from 'react';
 
 interface IBillboardProps {
