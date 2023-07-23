@@ -4,5 +4,6 @@ export interface IProductPage {
     };
     searchParams: {
         sort: string;
+        search: string;
     };
 }
