@@ -14,7 +14,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({ params }) => {
     });
     const billBoard = {
         label: `Explore the ${params.category} Collection`,
-        imageUrl: '/banner2.jpg',
+        imageUrl: '/landing-banner.avif',
     };
 
     return (
