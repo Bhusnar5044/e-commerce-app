@@ -10,7 +10,7 @@ import { ModalProps } from './types';
 export const Modal: React.FC<ModalProps> = memo(({ open, onClose, children }) => {
     return (
         <Transition show={open} appear as={Fragment}>
-            <Dialog as="div" className="relative z-10" onClose={onClose}>
+            <Dialog as="div" className="relative z-40" onClose={onClose}>
                 <div className="fixed inset-0 bg-black bg-opacity-50" />
 
                 <div className="fixed inset-0 overflow-y-auto">
