@@ -3,7 +3,7 @@ import { Billboard } from './Billboard';
 
 describe('Billboard', () => {
     it('should render properly', () => {
-        const { container } = render(<Billboard data={{ id: '', label: 'dummy', imageUrl: '' }} />);
+        const { container } = render(<Billboard data={{ label: 'dummy', imageUrl: '' }} />);
         expect(container).toMatchSnapshot();
     });
 });

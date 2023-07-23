@@ -12,11 +12,11 @@ import { onOpen } from '@/redux/features/modalSlice';
 import { useAppDispatch } from '@/redux/store';
 import { Product } from '@/types';
 
-interface ProductCard {
+interface IProductCard {
     data: Product;
 }
 
-export const ProductCard: React.FC<ProductCard> = memo(({ data }) => {
+export const ProductCard: React.FC<IProductCard> = memo(({ data }) => {
     const dispatch = useAppDispatch();
     const router = useRouter();
 
@@ -26,7 +26,6 @@ export const ProductCard: React.FC<ProductCard> = memo(({ data }) => {
 
     const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
         event.stopPropagation();
-
         dispatch(onOpen(data));
     };
 
@@ -40,7 +39,7 @@ export const ProductCard: React.FC<ProductCard> = memo(({ data }) => {
         <div onClick={handleClick} className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4">
             {/* Image & actions */}
             <div className="aspect-square rounded-xl bg-gray-100 relative">
-                <Image src={data.images?.[0]?.url} alt="" fill className="aspect-square object-cover rounded-md" />
+                <Image src={data.thumbnail} alt="" fill className="aspect-square object-cover rounded-md" />
                 <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
                     <div className="flex gap-x-6 justify-center">
                         <IconButton onClick={onPreview} icon={<Expand size={20} className="text-gray-600" />} />
@@ -50,8 +49,8 @@ export const ProductCard: React.FC<ProductCard> = memo(({ data }) => {
             </div>
             {/* Description */}
             <div>
-                <p className="font-semibold text-lg">{data.name}</p>
-                <p className="text-sm text-gray-500">{data.category?.name}</p>
+                <p className="font-semibold text-lg truncate">{data.title}</p>
+                <p className="text-sm text-gray-500">{data.category}</p>
             </div>
             {/* Price & Reiew */}
             <div className="flex items-center justify-between">
