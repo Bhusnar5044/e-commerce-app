@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery should render properly 1`] = `
+<div>
+  <button
+    aria-hidden="true"
+    style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    type="button"
+  />
+  <div
+    class="flex flex-col-reverse"
+  >
+    <div
+      class="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none"
+    >
+      <div
+        aria-orientation="horizontal"
+        class="grid grid-cols-4 gap-6"
+        role="tablist"
+      />
+    </div>
+    <div
+      class="aspect-square w-full"
+    />
+  </div>
+</div>
+`;

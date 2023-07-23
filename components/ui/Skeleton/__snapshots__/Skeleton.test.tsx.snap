@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skeleton should render properly 1`] = `
+<div>
+  <div
+    class="animate-pulse rounded-md bg-neutral-200"
+  />
+</div>
+`;

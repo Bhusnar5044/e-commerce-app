@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductsSkeleton should render properly 1`] = `
+<div>
+  <div
+    class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+  >
+    <div
+      class="animate-pulse bg-neutral-200 aspect-square rounded-xl"
+    />
+    <div
+      class="animate-pulse bg-neutral-200 aspect-square rounded-xl"
+    />
+    <div
+      class="animate-pulse bg-neutral-200 aspect-square rounded-xl"
+    />
+    <div
+      class="animate-pulse bg-neutral-200 aspect-square rounded-xl"
+    />
+    <div
+      class="animate-pulse bg-neutral-200 aspect-square rounded-xl"
+    />
+    <div
+      class="animate-pulse bg-neutral-200 aspect-square rounded-xl"
+    />
+  </div>
+</div>
+`;

@@ -1,9 +1,12 @@
-import { render } from '@test-utils';
+import { renderWithStore } from '@test-utils';
 import { Header } from './Header';
 
+jest.mock('next/navigation', () => ({
+    ...require('next-router-mock'),
+}));
 describe('Header', () => {
     it('should render properly', () => {
-        const { container } = render(<Header />);
+        const { container } = renderWithStore(<Header />);
         expect(container).toMatchSnapshot();
     });
 });

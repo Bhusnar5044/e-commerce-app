@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard should render properly 1`] = `
+<div>
+  <div
+    class="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
+  >
+    <div
+      class="aspect-square rounded-xl bg-gray-100 relative"
+    >
+      <img
+        alt=""
+        class="aspect-square object-cover rounded-md"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+      <div
+        class="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5"
+      >
+        <div
+          class="flex gap-x-6 justify-center"
+        >
+          <button
+            class="rounded-full flex items-center justify-center bg-white border shadow-md p-2 hover:scale-110 transition"
+          >
+            <svg
+              class="text-gray-600"
+              fill="none"
+              height="20"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8"
+              />
+              <path
+                d="M3 16.2V21m0 0h4.8M3 21l6-6"
+              />
+              <path
+                d="M21 7.8V3m0 0h-4.8M21 3l-6 6"
+              />
+              <path
+                d="M3 7.8V3m0 0h4.8M3 3l6 6"
+              />
+            </svg>
+          </button>
+          <button
+            class="rounded-full flex items-center justify-center bg-white border shadow-md p-2 hover:scale-110 transition"
+          >
+            <svg
+              class="text-gray-600"
+              fill="none"
+              height="20"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="8"
+                cy="21"
+                r="1"
+              />
+              <circle
+                cx="19"
+                cy="21"
+                r="1"
+              />
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p
+        class="font-semibold text-lg truncate"
+      >
+        iPhone 9
+      </p>
+      <p
+        class="text-sm text-gray-500"
+      >
+        smartphones
+      </p>
+    </div>
+    <div
+      class="flex items-center justify-between"
+    >
+      <div
+        class="font-semibold"
+      >
+        $549.00
+      </div>
+    </div>
+  </div>
+</div>
+`;

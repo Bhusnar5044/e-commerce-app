@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currency should render properly 1`] = `
+<div>
+  <div
+    class="font-semibold"
+  >
+    $0.00
+  </div>
+</div>
+`;

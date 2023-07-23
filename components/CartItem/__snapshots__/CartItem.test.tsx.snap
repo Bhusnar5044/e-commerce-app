@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem should render properly 1`] = `
+<div>
+  <li
+    class="flex py-6 border-b"
+  >
+    <div
+      class="relative h-24 w-24 rounded-md overflow-hidden sm:h-48 sm:w-48"
+    >
+      <img
+        alt=""
+        class="object-cover object-center"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F1%2Fthumbnail.jpg&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
+    <div
+      class="relative ml-4 flex flex-1 flex-col justify-between sm:ml-6"
+    >
+      <div
+        class="absolute z-10 right-0 top-0"
+      >
+        <button
+          class="rounded-full flex items-center justify-center bg-white border shadow-md p-2 hover:scale-110 transition"
+        >
+          <svg
+            class="lucide lucide-x"
+            fill="none"
+            height="15"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 6 6 18"
+            />
+            <path
+              d="m6 6 12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0"
+      >
+        <div
+          class="flex justify-between"
+        >
+          <p
+            class=" text-lg font-semibold text-black"
+          >
+            iPhone 9
+          </p>
+        </div>
+        <div
+          class="font-semibold"
+        >
+          $549.00
+        </div>
+      </div>
+    </div>
+  </li>
+</div>
+`;
