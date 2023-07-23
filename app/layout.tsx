@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
+import BottomHeader from '@/components/Header/BottomHeader';
+import Header from '@/components/Header/Header';
 import ModalProvider from '@/providers/ModalProvider';
 import ReduxProvider from '@/providers/ReduxProvider';
 import ToastProvider from '@/providers/ToastProvider';
@@ -19,9 +20,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body className={inter.className}>
                 <ToastProvider />
-                <ModalProvider />
                 <ReduxProvider>
-                    <Navbar />
+                    <ModalProvider />
+                    <Header />
+                    <BottomHeader />
                     {children}
                 </ReduxProvider>
                 <Footer />
