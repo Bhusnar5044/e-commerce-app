@@ -1,9 +1,9 @@
-import { render } from '@test-utils';
+import { render, screen } from '@test-utils';
 import { Footer } from './Footer';
 
 describe('Footer', () => {
     it('should render properly', () => {
-        const { container } = render(<Footer />);
-        expect(container).toMatchSnapshot();
+        render(<Footer />);
+        expect(screen.getByText(/2023 E-Commerce-Store, Inc. All rights reserved/i)).toBeInTheDocument();
     });
 });

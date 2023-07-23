@@ -1,4 +1,4 @@
-import { renderWithStore } from '@test-utils';
+import { renderWithStore, screen } from '@test-utils';
 import { Header } from './Header';
 
 jest.mock('next/navigation', () => ({
@@ -8,5 +8,6 @@ describe('Header', () => {
     it('should render properly', () => {
         const { container } = renderWithStore(<Header />);
         expect(container).toMatchSnapshot();
+        expect(screen.getByText(/E-COMMERCE-APP/)).toBeInTheDocument();
     });
 });

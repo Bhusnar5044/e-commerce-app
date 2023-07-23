@@ -1,8 +1,6 @@
 'use client';
 
-import axios from 'axios';
-import { useSearchParams } from 'next/navigation';
-import { FC, memo, useEffect } from 'react';
+import { FC, memo } from 'react';
 import { toast } from 'react-hot-toast';
 
 import Button from '@/components/ui/Button';
@@ -11,31 +9,16 @@ import { useAppDispatch, useAppSelector } from '@/redux';
 import { removeAll } from '@/redux/features/cartSlice';
 
 export const CartSummary: FC = memo(() => {
-    const searchParams = useSearchParams();
     const items = useAppSelector((state) => state.cart.items);
     const dispatch = useAppDispatch();
-
-    useEffect(() => {
-        if (searchParams.get('success')) {
-            toast.success('Payment completed.');
-            dispatch(removeAll());
-        }
-
-        if (searchParams.get('canceled')) {
-            toast.error('Something went wrong.');
-        }
-    }, [searchParams, dispatch]);
 
     const totalPrice = items.reduce((total, item) => {
         return total + Number(item.price);
     }, 0);
 
-    const onCheckout = async () => {
-        const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
-            productIds: items.map((item) => item.id),
-        });
-
-        window.location = response.data.url;
+    const onCheckout = () => {
+        toast.success('Payment completed.');
+        dispatch(removeAll());
     };
 
     return (
