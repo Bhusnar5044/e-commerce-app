@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 
 export const mockAxios = new MockAdapter(axios);
-const mockStore = configureStore([]),
+export const mockStore = configureStore([]),
     store = mockStore({ ...initialState });
 
 const WithStore: FC<PropsWithChildren> = (props) => <Provider store={store}>{props.children}</Provider>;
