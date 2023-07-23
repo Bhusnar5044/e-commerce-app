@@ -3,7 +3,7 @@ import { GalleryTab } from './GalleryTab';
 
 describe('GalleryTab', () => {
     it('should render properly', () => {
-        const { container } = render(<GalleryTab image={{ id: 'dummy', url: '' }} />);
+        const { container } = render(<GalleryTab image="" />);
         expect(container).toMatchSnapshot();
     });
 });
