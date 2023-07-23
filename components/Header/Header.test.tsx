@@ -1,9 +1,9 @@
 import { render } from '@test-utils';
-import { MainNav } from './MainNav';
+import { Header } from './Header';
 
-describe('MainNav', () => {
+describe('Header', () => {
     it('should render properly', () => {
-        const { container } = render(<MainNav data={['dummy']} />);
+        const { container } = render(<Header />);
         expect(container).toMatchSnapshot();
     });
 });

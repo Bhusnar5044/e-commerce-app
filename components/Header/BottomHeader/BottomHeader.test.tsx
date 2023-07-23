@@ -1,9 +1,9 @@
 import { render } from '@test-utils';
-import { Navbar } from './Navbar';
+import { BottomHeader } from './BottomHeader';
 
-describe('Navbar', () => {
+describe('BottomHeader', () => {
     it('should render properly', () => {
-        const { container } = render(<Navbar />);
+        const { container } = render(<BottomHeader />);
         expect(container).toMatchSnapshot();
     });
 });
